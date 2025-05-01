@@ -27,9 +27,9 @@ export const navItems: NavItem[] = [
   },
   {
     label: {
-      tr: 'Döngüsel Plastik',
-      en: 'Circular Plastic',
-      de: 'Kreislauf-Kunststoffe'
+      tr: 'CYLRE Döngüsel Plastik',
+      en: 'CYLRE Circular Plastics',
+      de: 'CYLRE Kreislauf-Kunststoffe'
     },
     href: '/circular-plastic'
   },

@@ -61,14 +61,14 @@ export const engineeredCompoundsContent = {
 
 export const circularPlasticContent = {
   title: {
-    tr: 'DÖNGÜSEL PLASTİK TEKNİK KOMPAUNDLAR',
-    en: 'CIRCULAR PLASTIC COMPOUNDS',
-    de: 'KREISLAUFKUNSTSTOFF-COMPOUNDS'
+    tr: 'CYLRE® DÖNGÜSEL PLASTİK TEKNİK KOMPAUNDLAR',
+    en: 'CYLRE® CIRCULAR PLASTIC COMPOUNDS',
+    de: 'CYLRE® KREISLAUFKUNSTSTOFF-COMPOUNDS'
   },
   subtitle: {
-    tr: '...formüle edilmiş sürdürülebilir teknik plastik kompaundlar',
-    en: '...reformulated circular & sustainable and technical compounds',
-    de: '...neuformulierte kreislauforientierte & nachhaltige technische Compounds'
+    tr: '...formüle edilmiş CYLRE® sürdürülebilir teknik plastik kompaundlar',
+    en: '...reformulated CYLRE® circular & sustainable technical compounds',
+    de: '...neuformulierte CYLRE® kreislauforientierte & nachhaltige technische Compounds'
   },
   seriesTitle: {
     tr: 'CYLRE® – Zorlu Uygulamalar için Gelişmiş Geri Dönüştürülmüş Kompaundlar',
