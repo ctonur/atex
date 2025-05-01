@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Set security headers
+Header set X-Content-Type-Options "nosniff"
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+# Enable CORS for specific domains if needed
+Header set Access-Control-Allow-Origin "https://www.atexplastik.com"
+
+# Cache static assets
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|svg|js|css)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
